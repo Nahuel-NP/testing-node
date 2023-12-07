@@ -17,7 +17,6 @@ describe('js-foundation/05-factory.ts',()=>{
 
     const makePerson = buildMakePerson({getUUID,getAge});
     const person = makePerson({name:'John Doe',birthdate:'1994-06-08'});
-    console.log(person);
 
     expect(person).toEqual(
       { id: '12345', name: 'John Doe', birthdate: '1994-06-08', age: 35 }
