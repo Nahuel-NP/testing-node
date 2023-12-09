@@ -32,6 +32,7 @@ export const buildLogger = (service: string ) => {
     },
     error: (message: string ) => {
       logger.error('error', {
+        level:'error',
         message, 
         service,
       });

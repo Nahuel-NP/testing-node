@@ -49,7 +49,7 @@ describe('plugins/logger.plugin',()=>{
     expect(winstonLoggerMock).toHaveBeenCalledWith(
       'error',
       expect.objectContaining({
-        level:'info',
+        level:'error',
         message,
         service
       })
